@@ -4,7 +4,7 @@ console.log(jQuery);
 //standard forEach loop
 var forEach = function(arr, cb) {
         for (var i = 0; i < arr.length; i += 1) {
-            cb(arr[i], i, arr)
+            cb(arr[i], i, arr);
         }
     }
     //targeting div which will accept the JSON elements.
@@ -16,7 +16,7 @@ var putDataOnPage = function(dataFromApi) {
     console.log(dataFromApi);
     forEach(dataFromApi.results, function(legislatorObject) {
 
-        var builderString = '<div class="legislator-card col-sm-6 col-md-6">';
+        var builderString = '<div class="legislator-card col-sm-6 col-md-3">';
         builderString += '<div class="legislator-name">';
         builderString += '<h3>' + legislatorObject.first_name + " " + legislatorObject.last_name; + '</h3>';
         builderString += '<div class="title-and-party">';

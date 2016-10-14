@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box
+    /*box-sizing: border-box*/
 }
 
 #app-container {
@@ -9,17 +9,17 @@
 
 .legislators {
   display: flex;
-  flex-flow: row wrap;
-  
+  /*flex-flow: row wrap;*/
+  flex-wrap: wrap;
   /* Then we define how is distributed the remaining space */
-  justify-content: space-around;
+  /*justify-content: space-around;*/
 }
 
 .legislator-card {
 
     justify-content: space-between;
-    margin: 10px;
-    border: dashed;
+    margin: 15px;
+    /*border: dashed;*/
     background-color: #E08283
 }
 
