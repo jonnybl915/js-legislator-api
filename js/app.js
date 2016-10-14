@@ -16,11 +16,12 @@ var putDataOnPage = function(dataFromApi) {
     console.log(dataFromApi);
     forEach(dataFromApi.results, function(legislatorObject) {
 
-        var builderString = '<div class="legislator-card col-sm-6 col-md-3">';
+        var builderString = '<div class="legislator-card col-md-3">';
         builderString += '<div class="legislator-name">';
         builderString += '<h3>' + legislatorObject.first_name + " " + legislatorObject.last_name; + '</h3>';
         builderString += '<div class="title-and-party">';
         builderString += '<h5>' + legislatorObject.title + ' -- ' + legislatorObject.party + "-" + legislatorObject.state_name + '</h5>';
+        builderString += '</div>';
         builderString += '<ul>';
         builderString += '<li>' + 'email: ' + legislatorObject.email + '</li>';
         builderString += '<li>' + 'website: ' + legislatorObject.website + '</li>';
@@ -28,7 +29,7 @@ var putDataOnPage = function(dataFromApi) {
         builderString += '<li>' + 'twitter: ' + legislatorObject.twitter_id + '</li>';
         builderString += '</ul>';
         builderString += '<h6>'+ 'Term End: ' + legislatorObject.term_end + '</h6>';
-        builderString += '</div>';
+
         builderString += '</div>';
         builderString += '</div>';
 

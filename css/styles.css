@@ -17,7 +17,7 @@
 
 .legislator-card {
 
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     margin: 10px;
     /*border: dashed;*/
     background-color: #E08283
@@ -29,4 +29,8 @@ div ul li {
 
 h6 {
     font-size: 10px
+}
+
+body {
+  color:  #22313F;
 }
