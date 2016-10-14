@@ -18,13 +18,13 @@
 .legislator-card {
 
     justify-content: space-between;
-    margin: 15px;
+    margin: 10px;
     /*border: dashed;*/
     background-color: #E08283
 }
 
 div ul li {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 h6 {
